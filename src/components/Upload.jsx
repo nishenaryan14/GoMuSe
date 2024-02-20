@@ -11,7 +11,7 @@ const Upload = ({ onUpload }) => {
       if (file) {
         const fileName = file.name;
         const fileExt = fileName.split(".").pop().toLowerCase();
-        if (["mp3", "wav", "ogg"].includes(fileExt)) {
+        if (["mp3", "wav", "ogg", "mpeg"].includes(fileExt)) {
           console.log("Valid audio file");
           const reader = new FileReader();
           reader.onload = () => {
